@@ -21,9 +21,11 @@ print("intensity points shape",intensity.shape)
 flag_byte = inFile.get_flag_byte()
 print("flag_byte shape",flag_byte.shape)
 
+pt_ret_count = inFile.point_return_count()
+print("type of point return count", type(pt_ret_count))
+
 ret_num = inFile.get_return_num()
 print("ret_num shape",ret_num.shape)
-
 print("ret_num shape 100",ret_num[100].shape)
 print("First returned number",ret_num[0],"\n")
 print("First returned number",ret_num[0],"\n")
